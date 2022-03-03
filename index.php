@@ -1,10 +1,12 @@
 <!Doctype HTML>
 <?php
+session_start();
     $title = "Diary";
     $page = "home";
 ?>
 <html>
 <?php include("head.php"); ?>
+
     <body id="body-pd">
     <?php include_once("navbar.php")?>
 
@@ -14,10 +16,8 @@ include_once("connection.php");
         $sql = "SELECT id, title, data, date FROM notes ORDER BY `notes`.`id` DESC";
         $result = $conn->query($sql);
 ?>
-    
-  
 
-    
+<!-- //posts are here// -->
 <?php
         if ($result->num_rows > 0) {
             // output data of each row
@@ -38,7 +38,7 @@ include_once("connection.php");
                         </div>
 
                 <a href='edit.php?id=".$row["id"]."' class='btn btn-primary'> Edit </a>
-                <a href='delete.php?id=".$row["id"]."' class='btn btn-danger'>Delete</a>
+                <a href='delete_day.php?id=".$row["id"]."' class='btn btn-danger'>Delete</a>
                     </div>
                     </div>
                     <br/>
@@ -56,6 +56,7 @@ include_once("connection.php");
                 ;
         }
 ?> 
+<!-- //posts are here// -->
 
             <div class="card">
             <div class="card-body">

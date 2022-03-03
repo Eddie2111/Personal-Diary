@@ -13,8 +13,9 @@ form {
   width: 40%;
 }
 </style>
+<body id="body-pd">
 
-<form  action="insert.php" method="post">
+<form  action="insert_day.php" method="post">
 <div class="card">
   <div class="card-header">
     Create a post [Today: <?php echo date("m/d/Y");?> ]
@@ -31,7 +32,6 @@ form {
   <div class="mb-3">
     <label for="data" class="form-label">Story</label>
     <input required="required" type="text" name='data' class="form-control" id="text" aria-describedby="text">
-    
     <div id="data" class="form-text">Describe well in 500 words.</div>
   </div>
   <div class="mb-3">
@@ -44,3 +44,4 @@ form {
 
 
 
+</body>

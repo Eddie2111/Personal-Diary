@@ -1,8 +1,15 @@
-body-dark{
-    background-color:rgb(54, 54, 54);
+.body-dark{
+    background-color:rgb(22, 22, 22);
     color:white;
+    
+    
 }
-body-pd{
-    background-color:rgb(204, 204, 204);
-    color:rgb(2, 2, 2);
-}
+
+.mystyle {
+    width: 100%;
+    padding: 25px;
+    background-color: coral;
+    color: white;
+    font-size: 25px;
+    transition: 0.5s ease-in-out;
+  }
