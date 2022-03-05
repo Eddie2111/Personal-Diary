@@ -1,21 +1,18 @@
 <?php
     include_once("head.php");
     include_once("navbar.php");
-    include_once("connection.php");
+    
 ?>
 
-<style>
 
-form {
+<body id="body-pd">
+
+<form  action="proceeds/insert_day.php" method="post" style = "
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
-}
-</style>
-<body id="body-pd">
-
-<form  action="insert_day.php" method="post">
+">
 <div class="card">
   <div class="card-header">
     Create a post [Today: <?php echo date("m/d/Y");?> ]
@@ -37,10 +34,13 @@ form {
   <div class="mb-3">
     <label for="date" class="form-label">Date</label>
     <input required="required" type="date" name='date' class="form-control" id="date" value="<?php echo date("m/d/Y");?> "/>
-  </div>
+    </div>
+    <center>
+    <button type="submit" class="submit-button">Submit</button>
+    </center>
   </div>
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  
 
 
 

@@ -11,7 +11,7 @@ session_start();
     <?php include_once("navbar.php")?>
 
 <?php //Critical section here!
-include_once("connection.php");
+ include_once("connection.php");
         // query
         $sql = "SELECT id, title, data, date FROM notes ORDER BY `notes`.`id` DESC";
         $result = $conn->query($sql);

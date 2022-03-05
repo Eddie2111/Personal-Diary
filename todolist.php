@@ -1,21 +1,21 @@
 <?php
     include_once("head.php");
     include_once("navbar.php");
-    include_once("connection.php");
+    
 ?>
 
 <style>
 
 form {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
+
 }
 </style>
 <body id="body-pd">
 <!--form for adding new task-->
-<form  action="insert_task.php" method="post">
+<form  action="proceeds/insert_task.php" method="post" style= "      display: block;
+                                                            margin-left: auto;
+                                                            margin-right: auto;
+                                                            width: 40%;">
     <div class="card" style="border-color:'black'">
     <div class="card-header">
         Entry your ToDo's [Today: <?php echo date("m/d/Y");?> ]
@@ -29,10 +29,10 @@ form {
     <div class="mb-3">
         <input required="required" type="text" name='data' class="form-control" id="text" aria-describedby="text" placeholder="task">
     </div>
-    
+    <center><button type="submit" class="submit-button">Submit</button></center>
     </div>
 
-    <button type="submit" class="btn btn-primary">Submit</button>
+    
     <br/>
     </div>
     <br/>
@@ -43,7 +43,7 @@ form {
     <div class="row">
 
     <?php //Critical section here!
-include_once("connection.php");
+
         // query
         $sql = "SELECT id, title, task FROM todolist ORDER BY `todolist`.`id` ASC";
         $result = $conn->query($sql);
@@ -77,8 +77,8 @@ include_once("connection.php");
                     <h5 class='card-title'> ".$row["title"]." </h5>
                         <p class='card-text'>".$row["task"]."</p>
                         <a href='edit.php?id=".$row['id']."' class='btn btn-primary'> Edit </a>
-                        <a href='delete_task.php?id=".$row['id']."' class='btn btn-danger'>Delete</a>
-                        <a href='delete_task.php?id=".$row['id']."' class='btn btn-success'>Complete</a>
+                        <a href='proceeds/delete_task.php?id=".$row['id']."' class='btn btn-danger'>Delete</a>
+                        <a href='proceeds/delete_task.php?id=".$row['id']."' class='btn btn-success'>Complete</a>
                     </div>
                 </div>
             </div>

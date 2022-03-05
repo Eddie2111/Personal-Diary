@@ -1,10 +1,7 @@
 .body-dark{
     background-color:rgb(22, 22, 22);
-    color:white;
-    
-    
+    color:white;  
 }
-
 .mystyle {
     width: 100%;
     padding: 25px;
@@ -13,3 +10,87 @@
     font-size: 25px;
     transition: 0.5s ease-in-out;
   }
+
+  .circle {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.submit-button{
+    background-color: rgb(23, 127, 238);
+    color: white;
+    font-size: 18px;
+    border: none;
+    height:45px;
+    width:200px;
+    transition: 0.3s ease-in-out;
+}
+.submit-button:hover{
+    background-color: rgb(47, 220, 47);
+    color: white;
+    font-size: 18px;
+    border: none;
+    height:45px;
+    width:300px;
+    transition: 0.3s ease-in-out;
+}
+@media only screen and (max-width: 600px) {
+
+.submit-button{
+    background-color: rgb(23, 127, 238);
+    color: white;
+    font-size: 18px;
+    border: none;
+    height:45px;
+    width:100px;
+    transition: 0.3s ease-in-out;
+}
+.submit-button:hover{
+    background-color: rgb(47, 220, 47);
+    color: white;
+    font-size: 18px;
+    border: none;
+    height:45px;
+    width:150px;
+    transition: 0.3s ease-in-out;
+}
+.ccard1 {
+    margin:auto;
+    padding: auto;
+    height: 400px;
+    width: 400px;
+    padding: 0.5rem;
+    box-shadow: 11px 11px 23px 5px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 11px 11px 23px 5px rgba(0,0,0,0.47);
+    -moz-box-shadow: 11px 11px 23px 5px rgba(0,0,0,0.47);
+    margin-top: 30px;
+}
+
+}
+
+
+.ccard {
+    margin:auto;
+    padding: auto;
+    height: 400px;
+    width: 400px;
+    padding: 0.5rem;
+    box-shadow: 11px 11px 23px 5px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 11px 11px 23px 5px rgba(0,0,0,0.47);
+    -moz-box-shadow: 11px 11px 23px 5px rgba(0,0,0,0.47);
+    margin-top: 30px;
+}
+.ccard1 {
+    margin:auto;
+    padding: auto;
+    height: 400px;
+    width: 800px;
+    padding: 0.5rem;
+    box-shadow: 11px 11px 23px 5px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 11px 11px 23px 5px rgba(0,0,0,0.47);
+    -moz-box-shadow: 11px 11px 23px 5px rgba(0,0,0,0.47);
+    margin-top: 30px;
+}

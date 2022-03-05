@@ -4,7 +4,14 @@ include("head.php");
 ?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarTogglerDemo03" 
+        aria-controls="navbarTogglerDemo03" 
+        
+        aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="index.php">Diary</a>
@@ -24,10 +31,10 @@ include("head.php");
         </li>
       </ul>
       <form class="d-flex">
-
-      
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+        <a href="login.php" class="btn btn-outline-primary">Sign up </a> 
+        <p>&nbsp;</p>
+        <a href="login.php" class="btn btn-outline-success">Login</a>
       </form>
     </div>
   </div>
@@ -36,3 +43,4 @@ include("head.php");
 <button class="btn btn-primary" onClick="modechange()" style="margin:0px 20px 0px 0px;float:left;position:fixed;"> 
               <i class='bx bxs-moon'> </i> 
       </button>
+      <br/>
