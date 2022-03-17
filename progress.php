@@ -6,23 +6,19 @@
 
 <body id="body-pd">
 <!--form for adding new task-->
-<form  action="proceeds/insert_task.php" method="post" style= "      
+<form  action="proceeds/insert_progress.php" method="post" style= "      
                                                             display: block;
                                                             margin-left: auto;
                                                             margin-right: auto;
                                                             width: 40%;">
     <div class="card" style="border-color:'black'">
     <div class="card-header">
-        Entry your ToDo's [Today: <?php echo date("d/m/Y- ");?> ]
+        List of tasks to be completed
     </div>
     <div class="card-body">
 
     <div class="mb-3">
-        
-        <input required="required" type="text" name= 'title' class="form-control" id="text" aria-describedby="text" placeholder="title">
-    </div>
-    <div class="mb-3">
-        <input required="required" type="text" name='data' class="form-control" id="text" aria-describedby="text" placeholder="task">
+        <input required="required" type="text" name='task' class="form-control" id="text" aria-describedby="text" placeholder="task">
     </div>
     <center><button type="submit" class="submit-button">Submit</button></center>
     </div>
@@ -40,7 +36,7 @@
     <?php //Critical section here!
 
         // query
-        $sql = "SELECT id, title, task FROM todolist ORDER BY `todolist`.`id` ASC";
+        $sql = "SELECT id, task FROM progress ORDER BY `progress`.`id` ASC";
         $result = $conn->query($sql);
     ?>
 
@@ -67,13 +63,12 @@
             while($row = $result->fetch_assoc()) {
                 echo "
                 <div class='col'>
-                <div class='card' style='width: 18rem;'>
+                <div class='card' style='width: 30rem;'>
                     <div class='card-body'>
-                    <h5 class='card-title'> ".$row["title"]." </h5>
-                        <p class='card-text'>".$row["task"]."</p>
-                        <a href='edit.php?id=".$row['id']."' class='btn btn-primary'> Edit </a>
-                        <a href='proceeds/delete_task.php?id=".$row['id']."' class='btn btn-danger'>Delete</a>
-                        <a href='proceeds/delete_task.php?id=".$row['id']."' class='btn btn-success'>Complete</a>
+                        <p class='card-text'>
+                        <strong>".$row["id"].".</strong> 
+                                ".$row["task"]."</p>
+                        <a href='proceeds/delete_progress.php?id=".$row['id']."' class='btn btn-success'>Complete</a>
                     </div>
                 </div>
             </div>
@@ -82,7 +77,7 @@
             }
         } else {
             echo "<center> 
-                    You have not assigned any task<br/> 
+                    You have not assigned any progress task<br/> 
                     <Label> Create a task? </Label><br/> 
                     
                 </center>

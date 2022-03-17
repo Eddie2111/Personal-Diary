@@ -37,6 +37,7 @@
     width:300px;
     transition: 0.3s ease-in-out;
 }
+
 @media only screen and (max-width: 600px) {
 
 .submit-button{
@@ -46,6 +47,7 @@
     border: none;
     height:45px;
     width:100px;
+    border-radius: 30px;
     transition: 0.3s ease-in-out;
 }
 .submit-button:hover{
@@ -55,6 +57,7 @@
     border: none;
     height:45px;
     width:150px;
+    border-radius: 0px;
     transition: 0.3s ease-in-out;
 }
 .ccard1 {

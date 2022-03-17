@@ -45,21 +45,22 @@
         border-radius: 50%;
         margin-left:15px;
         transition: 0.3s ease;
-}
-.circle:hover {
-        height: 90px;
-        width: 90px;
-        background-color: #1a65e8;
-        border-radius: 50%;
-        
-}
+    }   
+    .circle:hover {
+            height: 90px;
+            width: 90px;
+            background-color: #1a65e8;
+            border-radius: 50%;
+            
+    }
 
-    </style>
+</style>
 
 
     <body id="body-pd">
         
-<!-- do not use grid because it's not responsive -->
+
+    <!-- do not use grid because it's not responsive -->
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -172,8 +173,7 @@
     <div class="col">
       <style>
           .secondcard{
-          background-color: #1125bd;
-
+            background-color: #1125bd;
           }
       </style>
       <div class="secondcard">bro </div>

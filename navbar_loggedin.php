@@ -27,17 +27,14 @@ include("head.php");
           <a class="nav-link" href="todolist.php">To do</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="progress.php">Progress</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li>
       </ul>
       <form class="d-flex">
         <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-        <a href="login.php" class="btn btn-outline-primary">Sign up </a> 
+        
         <p>&nbsp;</p>
-        <a href="login.php" class="btn btn-outline-success">Login</a>
+        <a href="signout.php" class="btn btn-outline-success">Sign out</a>
       </form>
     </div>
   </div>
